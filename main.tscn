@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dawjwx8nckvmm"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_5e0xm"]
+[ext_resource type="PackedScene" uid="uid://cm6482er0d1j5" path="res://character.tscn" id="2_n7kpb"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_5e0xm")
+
+[node name="Character" parent="." instance=ExtResource("2_n7kpb")]
+position = Vector2(0, 40)
+
+[connection signal="finished_walking" from="Character" to="." method="_on_character_finished_walking"]
+[connection signal="walking" from="Character" to="." method="_on_character_walking"]
