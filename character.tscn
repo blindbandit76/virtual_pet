@@ -1,6 +1,6 @@
 [gd_scene load_steps=78 format=3 uid="uid://cm6482er0d1j5"]
 
-[ext_resource type="Script" path="res://character.gd" id="1_cxwx7"]
+[ext_resource type="Script" uid="uid://bmo3nryuuhhmb" path="res://character.gd" id="1_cxwx7"]
 [ext_resource type="Texture2D" uid="uid://c73e5tgtmys3n" path="res://assets/Fox Sprite Sheet.png" id="2_cmvx2"]
 [ext_resource type="Texture2D" uid="uid://daimdf81f8ux0" path="res://assets/heart.png" id="3_vp7bq"]
 
@@ -560,12 +560,12 @@ one_shot = true
 position = Vector2(24, 23.5)
 emitting = false
 amount = 5
+texture = ExtResource("3_vp7bq")
 lifetime = 3.0
 one_shot = true
 explosiveness = 0.65
 randomness = 0.25
 lifetime_randomness = 0.5
-texture = ExtResource("3_vp7bq")
 direction = Vector2(0, -1)
 spread = 68.18
 gravity = Vector2(0, 0)
