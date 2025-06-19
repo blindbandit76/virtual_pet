@@ -9,7 +9,7 @@ var player_size: Vector2i = Vector2i(100,104)
 var mouse_offset: Vector2 = Vector2.ZERO
 var selected: bool = false
 #This will be the position of the pet above the taskbar
-var taskbar_pos: int = (DisplayServer.screen_get_usable_rect().size.y - player_size.y)
+var taskbar_pos: int = (DisplayServer.screen_get_usable_rect().end.y - player_size.y)
 var screen_width: int = DisplayServer.screen_get_usable_rect().size.x
 #If true the character will move
 var is_walking: bool = false
